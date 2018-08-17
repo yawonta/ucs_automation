@@ -1,3 +1,18 @@
+#!/usr/bin/python
+
+__author__ = "Yonatan Wonta"
+__copyright__ = "Copyright 2018"
+__license__ = "GPL"
+__version__ = "1.0"
+__maintainer__ = "Yonatan Wonta"
+__status__ = "test"
+
+# use this script to verify connectivity to a remote host using python's ssh libray - paramiko
+# usage:
+#      verify_remote_host_login.py --host <host> --username <username> --password <password>
+# the script can be run either independently or you can call the verify_login function from other python scripts
+# arguments are optional, remove required=False if you would like them to be mandatory
+
 import paramiko
 import argparse
 
